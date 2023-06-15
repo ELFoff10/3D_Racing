@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 7fcb85678d491234784356c6225978f1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Agency Gothic CT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a3403b7fc2c92a44a90e885c4017f23c, type: 3}
+  - {fileID: 12800000, guid: 5b3eb39fa981aa243a7a118e7ad7d8fb, type: 3}
+  - {fileID: 12800000, guid: bcbe089f172d57744b4777fd14204bf5, type: 3}
+  - {fileID: 12800000, guid: 5a7d0474f795eb942adc3f9803ec9515, type: 3}
+  - {fileID: 12800000, guid: d3bea08b53316ca4093a66a383947762, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

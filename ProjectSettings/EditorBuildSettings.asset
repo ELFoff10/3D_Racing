@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 88b5f8da8cd5b2148904b7240106e911
+  - enabled: 1
+    path: Assets/Scenes/Races/Summer_Easy_Race.unity
+    guid: 6b1ee7757a4de88489525f046d0e98d4
+  - enabled: 1
+    path: Assets/Scenes/Races/Summer_Normal_Race.unity
+    guid: fe8fbc92cdb68b24eb1ff04f9fbe5fe5
+  - enabled: 1
+    path: Assets/Scenes/Races/Summer_Hard_Race.unity
+    guid: fc33dbb98ffdc0a4fb796f1792b61b3e
+  - enabled: 1
+    path: Assets/Scenes/Races/Summer_Insane_Race.unity
+    guid: 348833a1655ca20429f6b360a86aa960
+  - enabled: 1
+    path: Assets/Scenes/Races/Autumn_Easy_Race.unity
+    guid: 2d1fda464fd46884a81fd5577cefa82b
+  - enabled: 1
+    path: Assets/Scenes/Races/Winter_Easy_Race.unity
+    guid: 79605bf5efb98e049a61b88b3a8ce7f3
+  - enabled: 1
+    path: Assets/Scenes/Races/Spring_Easy_Race.unity
+    guid: 6ba91fe56d2c8354ba17d8c74c4d57b2
+  m_configObjects: {}

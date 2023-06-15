@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 533e91aa49f656c41b783383e3aeb1dc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - AA Duke
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 43638490d15307e4ba14214043dd7d2d, type: 3}
+  - {fileID: 12800000, guid: 4043db84349f88e449cbca0740bec384, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
