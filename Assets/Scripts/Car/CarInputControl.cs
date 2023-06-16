@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -11,7 +9,6 @@ public class CarInputControl : MonoBehaviour
     [SerializeField] private Car car;
     [SerializeField] private AnimationCurve brakeCurve;
     [SerializeField] private AnimationCurve steerCurve;
-
 
     [SerializeField][Range(0.0f, 1.0f)] private float autoBrakeStrength = 0.5f;
 
@@ -83,7 +80,7 @@ public class CarInputControl : MonoBehaviour
     {
         verticalAxis = Input.GetAxis("Vertical");
         horizontalAxis = Input.GetAxis("Horizontal");
-        //handBrakeAxis = Input.GetAxis("Jump"); // Самостоятельно в видео 29.6 на 19 минут говорится.
+        //handBrakeAxis = Input.GetAxis("Jump");
     }
 
     public void Reset()

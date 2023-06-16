@@ -1,10 +1,9 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UITrackTime : MonoBehaviour, IDependency<RaceTimeTracker>, IDependency<RaceStateTracker>
 {
-    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private TMP_Text text;
 
     private RaceTimeTracker raceTimeTracker;
     public void Construct(RaceTimeTracker obj) => raceTimeTracker = obj;

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class RaceInputController : MonoBehaviour, IDependency<CarInputControl>, IDependency<RaceStateTracker>
@@ -13,7 +12,6 @@ public class RaceInputController : MonoBehaviour, IDependency<CarInputControl>, 
     {
         raceStateTracker.Started += OnRaceStarted;
         raceStateTracker.Completed += OnRaceFinished;
-
         carInputControl.enabled = false;
     }
 

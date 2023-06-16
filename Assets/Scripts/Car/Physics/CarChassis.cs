@@ -21,8 +21,6 @@ public class CarChassis : MonoBehaviour
     [SerializeField] private float AngularDragMax;
     [SerializeField] private float AngularDragFactor;
 
-
-    // DEBUG. Нам пока они нужны для дебага, а потом их можно будет скрыть в инспекторе
     public float MotorTorque;
     public float BreakTorque;
     public float SteerAngle;

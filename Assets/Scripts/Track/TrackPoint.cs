@@ -13,7 +13,7 @@ public class TrackPoint : MonoBehaviour
     public bool IsLast;
     //public bool IsFinish = false;
 
-    protected bool isTarget; // Следующая наша цель, через что нужно проехать
+    protected bool isTarget;
     public bool IsTarget => isTarget;
 
     private void OnTriggerEnter(Collider other)

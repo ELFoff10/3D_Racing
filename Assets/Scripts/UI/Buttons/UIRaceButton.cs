@@ -1,9 +1,6 @@
 using UnityEngine.EventSystems;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
-using UnityEngine.TextCore;
 
 public class UIRaceButton : UISelectableButton/*, IScriptableObjectProperty*/
 {

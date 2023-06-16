@@ -11,7 +11,7 @@ public enum RaceState
 
 public class RaceStateTracker : MonoBehaviour, IDependency<TrackPointCircuit>
 {
-    public event UnityAction PreparationStarted; // подготовка к старту
+    public event UnityAction PreparationStarted;
     public event UnityAction Started;
     public event UnityAction Completed;
     public event UnityAction<TrackPoint> TrackPointPassed;
@@ -25,8 +25,6 @@ public class RaceStateTracker : MonoBehaviour, IDependency<TrackPointCircuit>
 
     [SerializeField] private int lapsToComplete;
 
-    //public bool isLastCircle = false;
-
     private RaceState state;
     public RaceState State => state;
 
@@ -35,19 +33,9 @@ public class RaceStateTracker : MonoBehaviour, IDependency<TrackPointCircuit>
         this.state = state;
     }
 
-    //public void Construct(TrackPointCircuit trackPointCircuit)
-    //{
-    //    this._trackPointCircuit = trackPointCircuit;
-    //}
-
     private void Start()
     {
         StartState(RaceState.Preparation);
-
-        //    if (_lapsToComplete == 1)
-        //    {
-        //        isLastCircle = true;
-        //    }
 
         countDownTimer.enabled = false;
 
@@ -92,11 +80,6 @@ public class RaceStateTracker : MonoBehaviour, IDependency<TrackPointCircuit>
             {
                 CompleteLap(lapAmount);
             }
-
-            //if ((lapAmount + 1) == lapsToComplete)
-            //{
-            //    isLastCircle = true;
-            //}
         }
 
     }

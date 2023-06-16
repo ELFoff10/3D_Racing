@@ -1,13 +1,11 @@
-using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UIRaceResultPanel : MonoSingleton<UIRaceResultPanel>, IDependency<RaceResultTime>
 {
     [SerializeField] private GameObject resultPanel;
-    [SerializeField] private TextMeshProUGUI recordTime;
-    [SerializeField] private TextMeshProUGUI currentTime;
+    [SerializeField] private TMP_Text recordTime;
+    [SerializeField] private TMP_Text currentTime;
 
     private RaceResultTime raceResultTime;
     public void Construct(RaceResultTime obj) => raceResultTime = obj;

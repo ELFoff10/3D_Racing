@@ -1,13 +1,13 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class UIRecord : MonoBehaviour, IDependency<RaceResultTime>, IDependency<RaceStateTracker>, IDependency<RaceTimeTracker>
 {
     [SerializeField] private GameObject panelRaceRecordTime;
     [SerializeField] private GameObject panelBest;
-    [SerializeField] private TextMeshProUGUI textRecordText;
-    [SerializeField] private TextMeshProUGUI textCurrentText;
+    [SerializeField] private TMP_Text textRecordText;
+    [SerializeField] private TMP_Text textCurrentText;
 
     private RaceResultTime raceResultTime;
     public void Construct(RaceResultTime obj) => raceResultTime = obj;

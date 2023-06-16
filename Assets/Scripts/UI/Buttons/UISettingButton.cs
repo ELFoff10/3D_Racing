@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class UISettingButton : UISelectableButton/*, IScriptableObjectProperty*/
 {
     [SerializeField] private Settings setting;
-    [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI valueText;
+    [SerializeField] private TMP_Text titleText;
+    [SerializeField] private TMP_Text valueText;
     [SerializeField] private Image previousImage;
     [SerializeField] private Image nextImage;
 
