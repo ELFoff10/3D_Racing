@@ -2,13 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-[Serializable]
-class EngineIndicatorColor
-{
-    public float MaxRpm;
-    public Color color;
-}
-
 public class CarEngineIndicator : MonoBehaviour
 {
     [SerializeField] private Car car;
@@ -16,6 +9,11 @@ public class CarEngineIndicator : MonoBehaviour
     [SerializeField] private EngineIndicatorColor[] colors;
 
     private void Update()
+    {
+        ChangeImageEngineIndicator();
+    }
+
+    private void ChangeImageEngineIndicator()
     {
         image.fillAmount = car.EngineRpm / car.EngineMaxRpm;
 
@@ -27,5 +25,12 @@ public class CarEngineIndicator : MonoBehaviour
                 break;
             }
         }
+    }
+
+    [Serializable]
+    struct EngineIndicatorColor
+    {
+        public float MaxRpm;
+        public Color color;
     }
 }

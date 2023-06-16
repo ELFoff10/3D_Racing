@@ -4,7 +4,7 @@ using UnityEngine;
 public class CarSpeedIndicator : MonoBehaviour
 {
     [SerializeField] private Car car;
-    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private TMP_Text text;
 
     private void Update()
     {

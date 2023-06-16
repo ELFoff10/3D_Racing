@@ -5,7 +5,6 @@ public class CarCameraPathFollower : CarCameraComponent
     [SerializeField] private Transform path;
     [SerializeField] private Transform lookTarget;
     [SerializeField] private float movementSpeed;
-    //[SerializeField] private GameObject pathObject;
 
     private Vector3[] points;
     private int pointIndex;
@@ -21,6 +20,11 @@ public class CarCameraPathFollower : CarCameraComponent
     }
 
     private void Update()
+    {
+        ÑameraMovementByPoints();
+    }
+
+    private void ÑameraMovementByPoints()
     {
         transform.position = Vector3.MoveTowards(transform.position, points[pointIndex], movementSpeed * Time.deltaTime);
 

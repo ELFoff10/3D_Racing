@@ -1,6 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+enum GearName
+{
+    R, N
+}
+
 [RequireComponent (typeof(CarChassis))]
 /// <summary>
 /// Информационная модель автомобиля.
@@ -81,12 +86,12 @@ public class Car : MonoBehaviour // Все скрипты будут взаимодействовать с классо
     {
         if (selectedGear == rearGear)
         {
-            return "R";
+            return GearName.R.ToString();
         }
 
         if (selectedGear == 0)
         {
-            return "N";
+            return GearName.N.ToString();
         }
 
         return (selectedGearIndex + 1).ToString();

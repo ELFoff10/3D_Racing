@@ -23,14 +23,17 @@ public class CarCameraController : MonoBehaviour, IDependency<RaceStateTracker>,
 
     private void Start()
     {
-        raceStateTracker.PreparationStarted += OnPreparationsStarted;
-        raceStateTracker.Completed += OnCompleted;
-
         follower.enabled = false;
         pathFollower.enabled = true;
     }
 
-    private void OnDestroy()
+    private void OnEnable()
+    {
+        raceStateTracker.PreparationStarted += OnPreparationsStarted;
+        raceStateTracker.Completed += OnCompleted;
+    }
+
+    private void OnDisable()
     {
         raceStateTracker.PreparationStarted -= OnPreparationsStarted;
         raceStateTracker.Completed -= OnCompleted;

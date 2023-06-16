@@ -7,6 +7,11 @@ public class CarCameraShaker : CarCameraComponent
 
     private void Update()
     {
+        ShakeTheCamera();
+    }
+
+    private void ShakeTheCamera()
+    {
         if (car.NormalizeLinearVelocity >= normalizeSpeedSnake)
         {
             transform.localPosition += Random.insideUnitSphere * shakeAmount * Time.deltaTime;

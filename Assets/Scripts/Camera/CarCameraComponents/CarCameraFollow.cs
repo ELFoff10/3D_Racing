@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CarCameraFollow : CarCameraComponent
@@ -19,6 +17,11 @@ public class CarCameraFollow : CarCameraComponent
 
     private void FixedUpdate()
     {
+        MoveCamera();
+    }
+
+    private void MoveCamera()
+    {
         Vector3 velocity = rigidbody.velocity;
         Vector3 targetRotation = target.eulerAngles;
 
@@ -27,19 +30,15 @@ public class CarCameraFollow : CarCameraComponent
             targetRotation = Quaternion.LookRotation(velocity, Vector3.up).eulerAngles;
         }
 
-        // Lerp
         float currentAngle = Mathf.LerpAngle(transform.eulerAngles.y, targetRotation.y, rotationDamping * Time.fixedDeltaTime);
         float currentHeight = Mathf.Lerp(transform.position.y, target.position.y + height, heightDamping * Time.fixedDeltaTime);
 
-        // Position
-        Vector3 positionOffSet = Quaternion.Euler(0f, currentAngle, 0f) * Vector3.forward * distance; 
+        Vector3 positionOffSet = Quaternion.Euler(0f, currentAngle, 0f) * Vector3.forward * distance;
         transform.position = target.position - positionOffSet;
         transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
 
-        //Rotation
         transform.LookAt(target.position + new Vector3(0, viewHeight, 0));
     }
-
 
     public override void SetProperties(Car car, Camera camera)
     {
